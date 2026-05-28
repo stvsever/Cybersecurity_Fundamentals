@@ -1,14 +1,13 @@
-# The Full Spectrum of Cybersecurity Fundamentals
+# Course on Cybersecurity Fundamentals
 
 <p align="center">
-  <kbd>MIT Licensed</kbd>
-  <kbd>Single HTML Course</kbd>
-  <kbd>No Build Step</kbd>
-  <kbd>Labs + Exercises</kbd>
-  <kbd>Mock Exam</kbd>
+  <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="MIT Licensed" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Type-HTML_Course-4f46e5.svg?style=flat-square" alt="Single HTML Course" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Build-No_Build_Step-16a34a.svg?style=flat-square" alt="No Build Step" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Includes-Labs_Exercises_Mock_Exam-f97316.svg?style=flat-square" alt="Labs, Exercises, and Mock Exam" /></a>
 </p>
 
-A free, browser-based cybersecurity fundamentals course by **Stijn Van Severen**. It covers practical security foundations across cryptography, networks, web security, ATT&CK, detection engineering, DFIR, malware, threat intelligence, DISARM, cloud, identity, governance, hands-on exercises, and a sampled mock exam.
+A free, browser-based course on cybersecurity fundamentals. It covers practical security foundations across cryptography, networks, web security, ATT&CK, detection engineering, DFIR, malware, threat intelligence, DISARM, cloud, identity, governance, hands-on exercises, and a sampled mock exam.
 
 ![Course overview](src/assets/overview.png)
 
@@ -120,12 +119,12 @@ Cybersecurity_Fundamentals/
 
 ## Responsible Use
 
-This course teaches offensive techniques only so defenders can understand, detect, and counter real adversary behavior. Practice only against systems you own or are explicitly authorized to test. Unauthorized access is illegal.
+This course is intended for education, defensive learning, authorized security testing, and responsible research only. Offensive concepts are included so defenders can understand, detect, and counter real adversary behavior. Practice only in environments you own, operate, or have explicit written permission to assess.
+
+## Ongoing Work In Progress
+
+This course is actively maintained. Content, labs, mappings, screenshots, and mock-exam items may change as the material is reviewed, expanded, and improved. Issues and pull requests are welcome, especially improvements to technical accuracy, lab quality, ATT&CK mappings, CTI interoperability, DISARM examples, regulatory explanations, and realistic case exercises. Keep the project dependency-free and vendor-neutral.
 
 ## License
 
 Released under the MIT License. You may use, modify, teach from, and redistribute this course, including commercially, as long as the copyright and license notice are preserved.
-
-## Contributing
-
-Issues and pull requests are welcome, especially improvements to technical accuracy, lab quality, ATT&CK mappings, CTI interoperability, DISARM examples, regulatory explanations, and realistic case exercises. Keep the project dependency-free and vendor-neutral.
