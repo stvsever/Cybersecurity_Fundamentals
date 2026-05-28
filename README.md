@@ -4,10 +4,10 @@
   <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="MIT Licensed" /></a>
   <a href="#"><img src="https://img.shields.io/badge/Type-HTML_Course-4f46e5.svg?style=flat-square" alt="Single HTML Course" /></a>
   <a href="#"><img src="https://img.shields.io/badge/Build-No_Build_Step-16a34a.svg?style=flat-square" alt="No Build Step" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Includes-Labs_Exercises_Mock_Exam-f97316.svg?style=flat-square" alt="Labs, Exercises, and Mock Exam" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Includes-Exercises_+_Exam-f97316.svg?style=flat-square" alt="Labs, Exercises, and Mock Exam" /></a>
 </p>
 
-A free, browser-based cybersecurity fundamentals course by **Stijn Van Severen**. It covers cryptography, networks, web security, ATT&CK, Mobile ATT&CK, ATLAS, detection engineering, DFIR, malware, threat intelligence, DISARM, cloud, identity, governance, guided exercises, runnable Python checks, and a sampled mock exam.
+A free, browser-based cybersecurity fundamentals course that covers cryptography, networks, web security, ATT&CK, Mobile ATT&CK, ATLAS, detection engineering, DFIR, malware, threat intelligence, DISARM, cloud, identity, governance, guided exercises, runnable Python checks, and a sampled mock exam.
 
 ![Course overview](src/assets/overview.png)
 
