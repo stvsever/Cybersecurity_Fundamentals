@@ -11,12 +11,6 @@
 
 ![Course overview](src/assets/overview.png)
 
-## Repository Description
-
-Use this GitHub repository description:
-
-> MIT-licensed cybersecurity fundamentals course in one interactive HTML file, covering crypto, networks, web security, ATT&CK, DFIR, malware, CTI, DISARM, GRC, labs, exercises, and a sampled mock exam.
-
 ## Contents
 
 - [Quick Start](#quick-start)
