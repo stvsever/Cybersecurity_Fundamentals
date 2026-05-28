@@ -46,7 +46,7 @@ Progress, exercise drafts, theme, and exam work are saved locally in your browse
 
 ## Run Coding Exercises
 
-The Python exercises in pane `02 Exercises` use a local Docker runner for deterministic checks. Docker Desktop or the Docker daemon must be running.
+The Python exercises in pane `02 Exercises` use a local runner for deterministic checks. For Docker, Docker Desktop or the Docker daemon must be running.
 
 ```bash
 docker build -t cyber-course-runner docker
@@ -66,7 +66,7 @@ python3 docker/runner.py
 - 19 curriculum modules with worked code examples in the lessons.
 - A true module-by-module reading mode that isolates one module at a time.
 - Search with all-match highlighting and previous/next navigation.
-- A dedicated `02 Exercises` pane with scenario drills, multiple choice checks, open-response model answers, and runnable Python coding exercises.
+- A dedicated `02 Exercises` pane with section and format filters, 200+ practice items, multiple choice checks, open-response model answers, and runnable Python coding exercises.
 - A separate `03 Mock Exam` pane with sampled attempts and 1000-point scoring.
 - MITRE ATT&CK Enterprise, Mobile ATT&CK, and ATLAS teaching matrices.
 - D3FEND countermeasure knowledge-graph structure mapped to ATT&CK-style defensive design.
@@ -98,7 +98,7 @@ python3 docker/runner.py
 
 The Exercises pane is for practice. It includes:
 
-- Scenario drills based on realistic incidents.
+- Section and format filters so learners can drill all questions, one domain, or one format.
 - Multiple choice questions with explanations.
 - Open questions with model answers.
 - Runnable Python exercises with function contracts, starter code, expected behavior, and automated tests.
