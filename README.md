@@ -1,13 +1,13 @@
-# Course on Cybersecurity Fundamentals
+# The Full Spectrum of Cybersecurity Fundamentals
 
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="MIT Licensed" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Type-HTML_Course-4f46e5.svg?style=flat-square" alt="Single HTML Course" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Build-No_Build_Step-16a34a.svg?style=flat-square" alt="No Build Step" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Includes-Labs_Exercises_Mock_Exam-f97316.svg?style=flat-square" alt="Labs, Exercises, and Mock Exam" /></a>
+  <kbd>MIT Licensed</kbd>
+  <kbd>Single HTML Course</kbd>
+  <kbd>Docker Python Runner</kbd>
+  <kbd>Exercises + Mock Exam</kbd>
 </p>
 
-A free, browser-based course on cybersecurity fundamentals. It covers practical security foundations across cryptography, networks, web security, ATT&CK, detection engineering, DFIR, malware, threat intelligence, DISARM, cloud, identity, governance, hands-on exercises, and a sampled mock exam.
+A free, browser-based cybersecurity fundamentals course by **Stijn Van Severen**. It covers cryptography, networks, web security, ATT&CK, Mobile ATT&CK, ATLAS, detection engineering, DFIR, malware, threat intelligence, DISARM, cloud, identity, governance, guided exercises, runnable Python checks, and a sampled mock exam.
 
 ![Course overview](src/assets/overview.png)
 
@@ -20,6 +20,7 @@ Use this GitHub repository description:
 ## Contents
 
 - [Quick Start](#quick-start)
+- [Run Coding Exercises](#run-coding-exercises)
 - [What Is Included](#what-is-included)
 - [Course Structure](#course-structure)
 - [Interactive Features](#interactive-features)
@@ -28,14 +29,12 @@ Use this GitHub repository description:
 - [Project Structure](#project-structure)
 - [Responsible Use](#responsible-use)
 - [License](#license)
-- [Contributing](#contributing)
 
 ## Quick Start
 
-There is nothing to install.
+There is nothing to build for reading the course.
 
 ```bash
-# Clone the repository, then open the course
 open src/index.html          # macOS
 xdg-open src/index.html      # Linux
 start src/index.html         # Windows
@@ -43,18 +42,36 @@ start src/index.html         # Windows
 
 You can also open the root `index.html`, which redirects to the course in `src/`.
 
-Progress, lab drafts, theme, and exam work are saved locally in your browser with `localStorage`. No account, backend, telemetry, or build step is required.
+Progress, exercise drafts, theme, and exam work are saved locally in your browser with `localStorage`.
+
+## Run Coding Exercises
+
+The Python exercises in pane `02 Exercises` use a local Docker runner for deterministic checks. Docker Desktop or the Docker daemon must be running.
+
+```bash
+docker build -t cyber-course-runner docker
+docker run --rm -p 8787:8787 cyber-course-runner
+```
+
+Then open the course, go to `02 Exercises`, click `Check runtime`, and run the coding checks. The browser sends code only to `http://127.0.0.1:8787/run` on your machine. No LLM grading is used.
+
+For local development without Docker, you can run the same runner directly:
+
+```bash
+python3 docker/runner.py
+```
 
 ## What Is Included
 
-- Practical cybersecurity fundamentals with enough depth for serious self-study.
-- A searchable curriculum with 19 modules.
-- Code labs with hints, saved drafts, and model solutions.
-- Realistic exercises based on cases such as APT28-style tradecraft, botnet C2, cloud SSRF, ransomware, and supply-chain compromise.
-- MITRE ATT&CK content, technique mapping, detection engineering, Navigator-style coverage logic, and Sigma examples.
+- 19 curriculum modules with worked code examples in the lessons.
+- A true module-by-module reading mode that isolates one module at a time.
+- Search with all-match highlighting and previous/next navigation.
+- A dedicated `02 Exercises` pane with scenario drills, multiple choice checks, open-response model answers, and runnable Python coding exercises.
+- A separate `03 Mock Exam` pane with sampled attempts and 1000-point scoring.
+- MITRE ATT&CK Enterprise, Mobile ATT&CK, and ATLAS teaching matrices.
+- D3FEND countermeasure knowledge-graph structure mapped to ATT&CK-style defensive design.
 - Threat intelligence interoperability: STIX 2.1, TAXII 2.1, MISP, OpenCTI, markings, confidence, expiry, and dissemination controls.
-- DISARM-style influence operation analysis for FIMI, hack-and-leak operations, amplification, and evidence handling.
-- Governance and risk coverage: NIST CSF 2.0, ISO 27001, CIS Controls, FAIR, CVSS, EPSS, KEV, GDPR, NIS2, DORA, SEC cyber disclosure, PCI DSS, HIPAA, and SOC 2.
+- DISARM Red and Blue influence-operation analysis for FIMI, hack-and-leak operations, Doppelganger-style media cloning, amplification, response, and evidence handling.
 
 ## Course Structure
 
@@ -62,7 +79,7 @@ Progress, lab drafts, theme, and exam work are saved locally in your browser wit
 |---|---:|---|
 | I. Foundations and the Adversary | 01-02 | Security properties, risk, threat actors, cybercrime economy |
 | II. Technical Core | 03-05 | Cryptography, network security, traffic analysis, web application security |
-| III. Offensive Operations | 06-07 | MITRE ATT&CK, reconnaissance, phishing, exploitation, lateral movement, C2 |
+| III. Offensive Operations | 06-07 | MITRE ATT&CK, Mobile ATT&CK, ATLAS, reconnaissance, exploitation, C2 |
 | IV. Defensive Operations and Intelligence | 08-11 | SOC, detection engineering, DFIR, malware, ransomware, CTI, STIX/TAXII, DISARM |
 | V. Governance, Identity, Cloud, and Frontiers | 12-15 | GRC, IAM, cloud, containers, AI security, OT/ICS, post-quantum migration |
 | VI. Advanced Operations and Global Governance | 16-19 | Stuxnet, adversary modeling, practitioner tools, global cyber governance, references |
@@ -72,23 +89,21 @@ Progress, lab drafts, theme, and exam work are saved locally in your browser wit
 - Three top-level panes: Curriculum, Exercises, and Mock Exam.
 - All-modules mode or module-by-module mode with previous and next navigation.
 - Generated module tree and reading progress tracking.
-- Embedded ATT&CK matrix with technique detail panels.
-- Saved lab drafts so work is not lost on refresh.
+- Embedded ATT&CK Enterprise, Mobile, and ATLAS matrices with technique detail panels.
+- Saved drafts for open response and coding exercises.
 - Light and dark themes.
 - Copyable code blocks and answer reveal controls.
 
 ## Exercises And Mock Exam
 
-The Exercises pane contains guided tutor-style practice cases. The Mock Exam pane samples from the question bank instead of serving one fixed test.
+The Exercises pane is for practice. It includes:
 
-The mock exam supports:
+- Scenario drills based on realistic incidents.
+- Multiple choice questions with explanations.
+- Open questions with model answers.
+- Runnable Python exercises with function contracts, starter code, expected behavior, and automated tests.
 
-- Multiple choice, open response, and coding questions.
-- Practice mode with immediate tutor feedback.
-- Exam mode with feedback withheld until grading.
-- Random or domain-sectioned attempts.
-- Weighted scoring normalized to a 1000-point scale, with 700 as the target readiness score.
-- Per-domain breakdowns so weak areas become a study plan.
+The Mock Exam pane is separate and samples from the question bank instead of serving one fixed test.
 
 ## Keyboard Shortcuts
 
@@ -111,6 +126,9 @@ Cybersecurity_Fundamentals/
 +-- README.md
 +-- LICENSE
 +-- index.html
++-- docker/
+|   +-- Dockerfile
+|   +-- runner.py
 +-- src/
     +-- index.html
     +-- assets/
@@ -120,10 +138,6 @@ Cybersecurity_Fundamentals/
 ## Responsible Use
 
 This course is intended for education, defensive learning, authorized security testing, and responsible research only. Offensive concepts are included so defenders can understand, detect, and counter real adversary behavior. Practice only in environments you own, operate, or have explicit written permission to assess.
-
-## Ongoing Work In Progress
-
-This course is actively maintained. Content, labs, mappings, screenshots, and mock-exam items may change as the material is reviewed, expanded, and improved. Issues and pull requests are welcome, especially improvements to technical accuracy, lab quality, ATT&CK mappings, CTI interoperability, DISARM examples, regulatory explanations, and realistic case exercises. Keep the project dependency-free and vendor-neutral.
 
 ## License
 
