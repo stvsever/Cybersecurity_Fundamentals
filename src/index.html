@@ -4254,19 +4254,29 @@ print(min_cost(path_model))   # 40  -> defenders should prioritize the SQLi path
      ==================================================================== */
   function wireLabs() {
     if (!state.labDrafts) state.labDrafts = {};
+
     article.querySelectorAll(".lab").forEach(function (lab) {
       lab.classList.add("lesson-example");
+
       var id = lab.querySelector(".lab-id");
       var diff = lab.querySelector(".lab-difficulty");
       var ans = lab.querySelector(".lab-ans-btn");
       var hint = lab.querySelector(".lab-hint-btn");
       var hintBox = lab.querySelector(".lab-hint");
+      var controls = lab.querySelector(".lab-controls");
+      var body = lab.querySelector(".lab-body");
+
       if (id && id.textContent.indexOf("LAB") === 0) id.textContent = id.textContent.replace("LAB", "EXAMPLE");
       if (diff) diff.textContent = "worked example";
       if (ans) ans.textContent = "Show worked solution";
       if (hint) hint.hidden = true;
-      if (hintBox) hintBox.hidden = false;
+
+      if (hintBox) {
+        hintBox.hidden = false;
+        if (body && controls) body.insertBefore(hintBox, controls);
+      }
     });
+
     document.querySelectorAll(".lab").forEach(function (lab, i) {
       if (lab.closest("#course")) return;
       var title = lab.querySelector(".lab-id");
@@ -4282,6 +4292,7 @@ print(min_cost(path_model))   # 40  -> defenders should prioritize the SQLi path
         });
       }
     });
+
     document.addEventListener("click", function (e) {
       var t = e.target;
       if (t.classList.contains("lab-hint-btn")) {
@@ -4304,6 +4315,7 @@ print(min_cost(path_model))   # 40  -> defenders should prioritize the SQLi path
         }
       }
     });
+
     var labs = article.querySelectorAll(".lesson-example").length;
     var cases = article.querySelectorAll(".case").length;
     setText("labCount", labs); setText("caseCount", cases);
