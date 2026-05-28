@@ -1,13 +1,13 @@
-# Course on Cybersecurity Fundamentals
-
-<p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="MIT Licensed" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Type-HTML_Course-4f46e5.svg?style=flat-square" alt="Single HTML Course" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Build-No_Build_Step-16a34a.svg?style=flat-square" alt="No Build Step" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Includes-Exercises_+_Exam-f97316.svg?style=flat-square" alt="Labs, Exercises, and Mock Exam" /></a>
-</p>
-
-A free, browser-based cybersecurity fundamentals course that covers cryptography, networks, web security, ATT&CK, Mobile ATT&CK, ATLAS, detection engineering, DFIR, malware, threat intelligence, DISARM, cloud, identity, governance, guided exercises, runnable Python checks, and a sampled mock exam.
+<div align="center">
+  <h1>Free Course on Cybersecurity Fundamentals</h1>
+  <p>
+    <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="MIT Licensed" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/Type-HTML_Course-4f46e5.svg?style=flat-square" alt="Single HTML Course" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/Build-No_Build_Step-16a34a.svg?style=flat-square" alt="No Build Step" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/Includes-Exercises_+_Exam-f97316.svg?style=flat-square" alt="Labs, Exercises, and Mock Exam" /></a>
+  </p>
+  <p><strong>A free, browser-based cybersecurity fundamentals course that covers cryptography, networks, web security, ATT&amp;CK, Mobile ATT&amp;CK, ATLAS, detection engineering, DFIR, malware, threat intelligence, DISARM, cloud, identity, governance, guided exercises, runnable Python checks, and a sampled mock exam.</strong></p>
+</div>
 
 ![Course overview](src/assets/overview.png)
 
@@ -20,7 +20,6 @@ Use this GitHub repository description:
 ## Contents
 
 - [Quick Start](#quick-start)
-- [Run Coding Exercises](#run-coding-exercises)
 - [What Is Included](#what-is-included)
 - [Course Structure](#course-structure)
 - [Interactive Features](#interactive-features)
@@ -31,6 +30,8 @@ Use this GitHub repository description:
 - [License](#license)
 
 ## Quick Start
+
+### 1. Read the course
 
 There is nothing to build for reading the course.
 
@@ -44,7 +45,7 @@ You can also open the root `index.html`, which redirects to the course in `src/`
 
 Progress, exercise drafts, theme, and exam work are saved locally in your browser with `localStorage`.
 
-## Run Coding Exercises
+### 2. Run the Python exercise checker
 
 The Python exercises in pane `02 Exercises` use a local runner for deterministic checks. For Docker, Docker Desktop or the Docker daemon must be running.
 
@@ -78,10 +79,10 @@ python3 docker/runner.py
 | Part | Modules | Focus |
 |---|---:|---|
 | I. Foundations and the Adversary | 01-02 | Security properties, risk, threat actors, cybercrime economy |
-| II. Technical Core | 03-05 | Cryptography, network security, traffic analysis, web application security |
-| III. Offensive Operations | 06-07 | MITRE ATT&CK, Mobile ATT&CK, ATLAS, reconnaissance, exploitation, C2 |
-| IV. Defensive Operations and Intelligence | 08-11 | SOC, detection engineering, DFIR, malware, ransomware, CTI, STIX/TAXII, DISARM |
-| V. Governance, Identity, Cloud, and Frontiers | 12-15 | GRC, IAM, cloud, containers, AI security, OT/ICS, post-quantum migration |
+| II. Technical Core | 03-06 | Cryptography, IAM, network security, traffic analysis, web application security |
+| III. Offensive Operations | 07-08 | MITRE ATT&CK, Mobile ATT&CK, D3FEND, reconnaissance, exploitation, C2 |
+| IV. Defensive Operations, Cloud, and Intelligence | 09-13 | SOC, detection engineering, DFIR, malware, cloud, containers, CTI, OSINT, STIX/TAXII, DISARM |
+| V. Governance and Frontiers | 14-15 | GRC, AI security, ATLAS, OT/ICS, post-quantum migration |
 | VI. Advanced Operations and Global Governance | 16-19 | Stuxnet, adversary modeling, practitioner tools, global cyber governance, references |
 
 ## Interactive Features
