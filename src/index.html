@@ -1167,7 +1167,7 @@ print(trace(txs, "ransom_wallet", {"exchange_X", "monero_swap"}))
 <p>Because attacks are assembled from a supply chain, defenders gain leverage by raising the cost at any link: MFA defeats most stolen-credential access (devaluing IABs), immutable backups and rapid response devalue ransomware, and financial tracing plus sanctions raise the cost of cashing out. The cybercrime economy is resilient but not frictionless, and friction is a strategy.</p>
 
 
-<div class="part-divider"><div class="pd-num mono">II</div><div class="pd-text"><div class="pd-eyebrow mono">PART II</div><div class="pd-title">The Technical Core</div><div class="pd-desc">The cryptographic, identity, network, and application building blocks every defender and attacker manipulates.</div></div></div>
+
 <h2>2.5 Deep dive: how Tor and Bitcoin actually work</h2>
 <p>The two technologies that underpin the cybercrime economy are widely misunderstood. Both are <em>dual-use</em>: Tor protects journalists, dissidents, and researchers as well as criminals, and most cryptocurrency activity is legitimate. Understanding the mechanics is what lets an investigator separate myth from method.</p>
 
@@ -1204,6 +1204,7 @@ print("block hash :", h)
 </div>
 <p>This is also why <strong>Bitcoin is pseudonymous, not anonymous</strong>: every transaction and address is in that public, permanent ledger. Once an address is tied to a real identity (via an exchange's KYC, an IP leak, or a reused address), its entire history is traceable, which is exactly how the Colonial Pipeline ransom was clawed back. Privacy coins like Monero break this by hiding amounts and parties on-chain, which is why investigators focus on the cash-out chokepoints where crypto meets the regulated banking system.</p>
 
+<div class="part-divider"><div class="pd-num mono">II</div><div class="pd-text"><div class="pd-eyebrow mono">PART II</div><div class="pd-title">The Technical Core</div><div class="pd-desc">The cryptographic, identity, network, and application building blocks every defender and attacker manipulates.</div></div></div>
 <h1><span class="h1-code mono">M03</span><span class="h1-title">3. Cryptography in Practice</span></h1>
 <p class="lead">Cryptography is the mathematics of trust under adversarial conditions. You rarely invent it, but you constantly choose, configure, and combine primitives, and almost every real-world break is an implementation or composition error rather than a broken algorithm. The job is to know which primitive solves which problem, and which pitfalls turn a strong algorithm into a useless one.</p>
 
@@ -3264,7 +3265,7 @@ def coordination_clusters(posts, min_accounts=4, max_age_days=45, window_seconds
 <div class="callout note"><span class="ct">WHY IT BELONGS IN A SECURITY COURSE</span><p>Influence operations increasingly combine with cyber intrusion. Treating FIMI with structured, evidence-based rigor lets defenders share observations, distinguish claims from coordination, and connect technical artifacts to cognitive effects without over-attributing.</p></div>
 
 
-<div class="part-divider"><div class="pd-num mono">V</div><div class="pd-text"><div class="pd-eyebrow mono">PART V</div><div class="pd-title">Governance and Frontiers</div><div class="pd-desc">Risk, controls, regulation, and the emerging AI, OT, and post-quantum frontiers.</div></div></div>
+
 <h2>13.7 Intelligence operations: collection management, counterintelligence, and OPSEC</h2>
 <p>Cyber threat intelligence is not only analysis and feeds; it is an operational discipline. Turning collection into action, and doing so without exposing yourself, is what separates a CTI function from a news aggregator.</p>
 <dl class="defs">
@@ -3276,6 +3277,7 @@ def coordination_clusters(posts, min_accounts=4, max_age_days=45, window_seconds
 </dl>
 <div class="callout danger"><span class="ct">DO NOT BURN THE SOURCE</span><p>The fastest way to lose access and endanger an operation is bad tradecraft: logging into a research persona from a corporate IP, reusing handles or passwords, or downloading malware to a connected host. Treat every interaction with adversary infrastructure as observed, attributable, and potentially booby-trapped.</p></div>
 
+<div class="part-divider"><div class="pd-num mono">V</div><div class="pd-text"><div class="pd-eyebrow mono">PART V</div><div class="pd-title">Governance and Frontiers</div><div class="pd-desc">Risk, controls, regulation, and the emerging AI, OT, and post-quantum frontiers.</div></div></div>
 <h1><span class="h1-code mono">M14</span><span class="h1-title">14. Governance, Risk, and Compliance</span></h1>
 <p class="lead">GRC is how security connects to the organization: the frameworks that structure a program, the risk methods that prioritize spending, and the regulations that mandate a floor. Technical excellence without governance produces unmanaged, unmeasured, unfunded security. This module is where defenders earn budget and boards make decisions.</p>
 
@@ -3904,7 +3906,7 @@ print(min_cost(path_model))   # 40  -> defenders should prioritize the SQLi path
         <div class="runtime-panel">
           <div>
             <div class="runtime-status" id="runnerStatus">Runtime not checked</div>
-            <p>Runnable Python exercises post your code to a local runner at <code>http://127.0.0.1:8787/run</code>. Start it with <code>python3 docker/runner.py</code> or Docker, then click <strong>Check runtime</strong>. The checker uses deterministic assertions with a timeout. No LLM grading is used.</p>
+            <p>Runnable Python exercises post your code to a local runner at <code>http://127.0.0.1:8787/run</code>. Start it with <code>python3 docker/runner.py</code> or Docker, then click <strong>Check runtime</strong>. The checker uses deterministic assertions with a timeout. See root README.md file for elaboration on using this runtime functionality.</p>
           </div>
           <button class="sec-btn" id="runnerCheck" type="button">Check runtime</button>
         </div>
