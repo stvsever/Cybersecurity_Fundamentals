@@ -6,7 +6,7 @@
     <a href="#"><img src="https://img.shields.io/badge/Build-No_Build_Step-16a34a.svg?style=flat-square" alt="No Build Step" /></a>
     <a href="#"><img src="https://img.shields.io/badge/Includes-Exercises_+_Exam-f97316.svg?style=flat-square" alt="Labs, Exercises, and Mock Exam" /></a>
   </p>
-  <p>A free, browser-based cybersecurity fundamentals course that covers cryptography, networks, web security, ATT&amp;CK, Mobile ATT&amp;CK, ATLAS, detection engineering, DFIR, malware, threat intelligence, DISARM, cloud, identity, governance, guided exercises, runnable Python checks, and a sampled mock exam.</p>
+  <p>A free, browser-based cybersecurity fundamentals course that covers cryptography, networks, cloud, identity, ATT&amp;CK (ENTERPRISE, MOBILE and ATLAS), NIST2.0-CF, incident response, threat intelligence, and governance; including guided exercises with runnable Python checks and a self-configurable mock exam.</p>
 </div>
 
 ![Course overview](src/assets/overview.png)
