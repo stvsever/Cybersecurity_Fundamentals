@@ -77,7 +77,7 @@ python3 docker/runner.py
 | III. Offensive Operations | 08-09 | MITRE ATT&CK, Mobile ATT&CK, D3FEND, reconnaissance, exploitation, C2 |
 | IV. Defensive Operations and Intelligence | 10-13 | SOC, detection engineering, DFIR, malware, ransomware, botnets, CTI, OSINT, STIX/TAXII, DISARM |
 | V. Governance and the Global Landscape | 14-15 | GRC, risk, controls, compliance, global cyber governance, regulation |
-| VI. Frontiers and Advanced Practice | 16-19 | AI and agentic security, ATLAS, OT/ICS, post-quantum migration, hyper-sophisticated operations, practitioner tools, references |
+| VI. Frontiers and Advanced Practice | 16-19 | AI and agentic runtime security, ATLAS, OT/ICS safety, post-quantum migration, frontier radar, hyper-sophisticated operations, advanced adversary modeling, practitioner tools, references |
 
 ## Interactive Features
 
