@@ -6,7 +6,7 @@
     <a href="#"><img src="https://img.shields.io/badge/Build-No_Build_Step-16a34a.svg?style=flat-square" alt="No Build Step" /></a>
     <a href="#"><img src="https://img.shields.io/badge/Includes-Exercises_+_Exam-f97316.svg?style=flat-square" alt="Labs, Exercises, and Mock Exam" /></a>
   </p>
-  <p>A free, browser-based cybersecurity fundamentals course that covers cryptography, networks, cloud, identity, ATT&amp;CK (ENTERPRISE, MOBILE and ATLAS), NIST2.0-CF, incident response, threat intelligence, and governance; including guided exercises with runnable Python checks and a self-configurable mock exam.</p>
+  <p>A free, browser-based cybersecurity fundamentals course that covers cryptography, networks, cloud, identity, ATT&amp;CK (ENTERPRISE, MOBILE and ATLAS), NIST2.0 CCF, incident response, threat intelligence, and governance; including guided exercises with runnable Python checks and a self-configurable mock exam.</p>
 </div>
 
 ![Course overview](src/assets/overview.png)
@@ -58,7 +58,7 @@ python3 docker/runner.py
 
 ## What Is Included
 
-- 19 curriculum modules with worked code examples in the lessons.
+- 19 curriculum modules with worked code examples and updated real-world cases in the lessons.
 - A true module-by-module reading mode that isolates one module at a time.
 - Search with all-match highlighting and previous/next navigation.
 - A dedicated `02 Exercises` pane with section and format filters, 200+ practice items, multiple choice checks, open-response model answers, and runnable Python coding exercises.
@@ -73,11 +73,11 @@ python3 docker/runner.py
 | Part | Modules | Focus |
 |---|---:|---|
 | I. Foundations and the Adversary | 01-02 | Security properties, risk, threat actors, cybercrime economy |
-| II. Technical Core | 03-06 | Cryptography, IAM, network security, traffic analysis, web application security |
-| III. Offensive Operations | 07-08 | MITRE ATT&CK, Mobile ATT&CK, D3FEND, reconnaissance, exploitation, C2 |
-| IV. Defensive Operations, Cloud, and Intelligence | 09-13 | SOC, detection engineering, DFIR, malware, cloud, containers, CTI, OSINT, STIX/TAXII, DISARM |
-| V. Governance and Frontiers | 14-15 | GRC, AI security, ATLAS, OT/ICS, post-quantum migration |
-| VI. Advanced Operations and Global Governance | 16-19 | Stuxnet, adversary modeling, practitioner tools, global cyber governance, references |
+| II. Technical Core and Cloud | 03-07 | Cryptography, IAM, network security, traffic analysis, web application security, cloud, containers |
+| III. Offensive Operations | 08-09 | MITRE ATT&CK, Mobile ATT&CK, D3FEND, reconnaissance, exploitation, C2 |
+| IV. Defensive Operations and Intelligence | 10-13 | SOC, detection engineering, DFIR, malware, ransomware, botnets, CTI, OSINT, STIX/TAXII, DISARM |
+| V. Governance and the Global Landscape | 14-15 | GRC, risk, controls, compliance, global cyber governance, regulation |
+| VI. Frontiers and Advanced Practice | 16-19 | AI and agentic security, ATLAS, OT/ICS, post-quantum migration, hyper-sophisticated operations, practitioner tools, references |
 
 ## Interactive Features
 
