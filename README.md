@@ -10,7 +10,7 @@
 
   <p>
     A free, browser-based cybersecurity fundamentals course that covers cryptography,
-    networks, cloud, identity, ATT&amp;CK (ENTERPRISE, MOBILE and ATLAS), NIST 2.0 CCF,
+    networks, cloud, identity, ATT&amp;CK (ENTERPRISE, MOBILE and ATLAS), NIST2.0 CSF,
     incident response, threat intelligence, and governance; including guided exercises
     with runnable Python checks and a self-configurable mock exam.
   </p>
