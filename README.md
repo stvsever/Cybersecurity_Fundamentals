@@ -15,6 +15,8 @@
     with runnable Python checks and a self-configurable mock exam.
   </p>
 
+  <hr>
+
   <img src="src/assets/overview.png" alt="Course overview" width="900" />
 
 <p>
@@ -23,6 +25,9 @@
     Cybersecurity Fundamentals
   </a>
 </p>
+
+  <hr>
+
 </div>
 
 ## Contents
