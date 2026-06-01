@@ -1,15 +1,29 @@
 <div align="center">
   <h1>Free Course on Cybersecurity Fundamentals</h1>
+
   <p>
     <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="MIT Licensed" /></a>
     <a href="#"><img src="https://img.shields.io/badge/Type-HTML_Course-4f46e5.svg?style=flat-square" alt="Single HTML Course" /></a>
     <a href="#"><img src="https://img.shields.io/badge/Build-No_Build_Step-16a34a.svg?style=flat-square" alt="No Build Step" /></a>
     <a href="#"><img src="https://img.shields.io/badge/Includes-Exercises_+_Exam-f97316.svg?style=flat-square" alt="Labs, Exercises, and Mock Exam" /></a>
   </p>
-  <p>A free, browser-based cybersecurity fundamentals course that covers cryptography, networks, cloud, identity, ATT&amp;CK (ENTERPRISE, MOBILE and ATLAS), NIST2.0 CCF, incident response, threat intelligence, and governance; including guided exercises with runnable Python checks and a self-configurable mock exam.</p>
-</div>
 
-![Course overview](src/assets/overview.png)
+  <p>
+    A free, browser-based cybersecurity fundamentals course that covers cryptography,
+    networks, cloud, identity, ATT&amp;CK (ENTERPRISE, MOBILE and ATLAS), NIST 2.0 CCF,
+    incident response, threat intelligence, and governance; including guided exercises
+    with runnable Python checks and a self-configurable mock exam.
+  </p>
+
+  <img src="src/assets/overview.png" alt="Course overview" width="900" />
+
+<p>
+  Check out the full interactive course:
+  <a href="https://stvsever.github.io/Cybersecurity_Fundamentals/src/index.html">
+    Cybersecurity Fundamentals
+  </a>
+</p>
+</div>
 
 ## Contents
 
