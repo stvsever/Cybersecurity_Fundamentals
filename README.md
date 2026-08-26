@@ -41,13 +41,13 @@ Opens straight in your browser. &nbsp;✓&nbsp; No install &nbsp;✓&nbsp; No ac
 
 - 🚀 [Quick Start](#-quick-start)
 - 📦 [What Is Included](#-what-is-included)
-- 🗺️ [Course Structure](#-course-structure)
+- 🧭 [Course Structure](#-course-structure)
 - 📈 [Interactive Features](#-interactive-features)
 - 🧪 [Exercises And Mock Exam](#-exercises-and-mock-exam)
-- ⚙️ [Settings And Local Data](#-settings-and-local-data)
-- ⌨️ [Keyboard Shortcuts](#-keyboard-shortcuts)
+- 🔧 [Settings And Local Data](#-settings-and-local-data)
+- 💻 [Keyboard Shortcuts](#-keyboard-shortcuts)
 - 📁 [Project Structure](#-project-structure)
-- ⚖️ [Responsible Use](#-responsible-use)
+- 🤝 [Responsible Use](#-responsible-use)
 - 📜 [License](#-license)
 
 ## 🚀 Quick Start
@@ -102,7 +102,7 @@ Leave that terminal open. The Exercises pane shows the exact command, a copy but
 - Threat intelligence interoperability: STIX 2.1, TAXII 2.1, MISP, OpenCTI, markings, confidence, expiry, and dissemination controls.
 - DISARM Red and Blue influence-operation analysis for FIMI, hack-and-leak operations, Doppelganger-style media cloning, amplification, response, and evidence handling.
 
-## 🗺️ Course Structure
+## 🧭 Course Structure
 
 | Part | Modules | Focus |
 |---|---:|---|
@@ -137,7 +137,7 @@ The Exercises pane is for practice. It includes:
 
 The Mock Exam pane is separate and samples from the question bank instead of serving one fixed test. It includes quick and standard attempt lengths, domain and format selection, practice or exam modes, a progress navigator, review flags, timer preferences, resume support, per-domain results, and a compact local history.
 
-## ⚙️ Settings And Local Data
+## 🔧 Settings And Local Data
 
 Open Settings from the top bar to control appearance, learning behavior, accessibility, assessment behavior, and local data. Relevant options include:
 
@@ -149,7 +149,7 @@ Open Settings from the top bar to control appearance, learning behavior, accessi
 
 The course has no account, analytics service, or remote progress store. Browser state stays on the current device. The optional Python checker listens on `127.0.0.1` and evaluates deterministic tests locally.
 
-## ⌨️ Keyboard Shortcuts
+## 💻 Keyboard Shortcuts
 
 | Key | Action |
 |---|---|
@@ -181,7 +181,7 @@ Cybersecurity_Fundamentals/
         +-- social-preview.png
 ```
 
-## ⚖️ Responsible Use
+## 🤝 Responsible Use
 
 This course is intended for education, defensive learning, authorized security testing, and responsible research only. Offensive concepts are included so defenders can understand, detect, and counter real adversary behavior. Practice only in environments you own, operate, or have explicit written permission to assess.
 
