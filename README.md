@@ -1,31 +1,33 @@
 <div align="center">
-  <h1>Free Course on Cybersecurity Fundamentals</h1>
+  <h1>The Full Spectrum of Cybersecurity Fundamentals</h1>
 
   <p>
-    <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="MIT Licensed" /></a>
-    <a href="#"><img src="https://img.shields.io/badge/Type-HTML_Course-4f46e5.svg?style=flat-square" alt="Single HTML Course" /></a>
-    <a href="#"><img src="https://img.shields.io/badge/Build-No_Build_Step-16a34a.svg?style=flat-square" alt="No Build Step" /></a>
-    <a href="#"><img src="https://img.shields.io/badge/Includes-Exercises_+_Exam-f97316.svg?style=flat-square" alt="Labs, Exercises, and Mock Exam" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/License-MIT-0b7a5e.svg?style=flat-square" alt="MIT Licensed" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/Modules-20-0b7a5e.svg?style=flat-square" alt="20 modules" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/Diagrams-24_interactive-0b7a5e.svg?style=flat-square" alt="24 interactive diagrams" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/Build-none_required-0b7a5e.svg?style=flat-square" alt="No build step" /></a>
   </p>
 
-  <p>
-    A free, browser-based cybersecurity fundamentals course covering cryptography, networks,
-    identity, cloud, web and application security, secure software delivery, ATT&amp;CK
-    (Enterprise, Mobile, and ATLAS), NIST CSF 2.0, incident response, threat intelligence,
-    and governance. Every complex mechanism ships with an interactive SVG diagram, and the
-    course includes guided exercises with runnable Python checks and a configurable mock exam.
-  </p>
+  <p><b>A free, browser-based cybersecurity course in one HTML file.</b><br>
+  Twenty modules from cryptography to governance, every complex mechanism drawn as an
+  interactive diagram, plus checked exercises and a scored mock exam.</p>
 
-  <hr>
+  <h3>&nbsp;</h3>
 
-  <img src="src/assets/overview.png" alt="Course overview" width="900" />
-
-<p>
-  Check out the full interactive course:
   <a href="https://stvsever.github.io/Cybersecurity_Fundamentals/src/index.html">
-    Cybersecurity Fundamentals
+    <img src="src/assets/open-course.gif" alt="Open the interactive course" width="380" />
   </a>
-</p>
+
+  <p><sub>
+    Runs in the browser, no install, no account.<br>
+    Direct link: <a href="https://stvsever.github.io/Cybersecurity_Fundamentals/src/index.html"><b>stvsever.github.io/Cybersecurity_Fundamentals</b></a>
+  </sub></p>
+
+  <h3>&nbsp;</h3>
+
+  <a href="https://stvsever.github.io/Cybersecurity_Fundamentals/src/index.html">
+    <img src="src/assets/overview.png" alt="The course, reading one module at a time" width="900" />
+  </a>
 
   <hr>
 
@@ -138,7 +140,8 @@ Open Settings from the top bar to control appearance, learning behavior, accessi
 - Theme, accent colour, interface typeface, information density, text size, and content width.
 - Global diagram visibility, default diagram state, diagram animation, motion preference, and high contrast.
 - Last-pane memory, advance-on-completion, first-visit walkthrough replay, keyboard shortcuts, exam timer, question navigator, abort confirmation, and the Python runner endpoint.
-- A local data summary, JSON backup export, JSON restore, progress reset, and full local reset.
+- A local data summary, JSON backup export, and JSON restore.
+- A delete panel that clears one category at a time: reading progress, practice and exam results, saved drafts, preferences, or everything. Each button says exactly what it removes, confirms first, and reloads the page.
 
 The course has no account, analytics service, or remote progress store. Browser state stays on the current device. The optional Python checker listens on `127.0.0.1` and evaluates deterministic tests locally.
 
@@ -170,6 +173,7 @@ Cybersecurity_Fundamentals/
     +-- index.html
     +-- assets/
         +-- overview.png
+        +-- open-course.gif
         +-- social-preview.png
 ```
 
