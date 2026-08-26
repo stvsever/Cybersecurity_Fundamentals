@@ -2,28 +2,32 @@
   <h1>The Full Spectrum of Cybersecurity Fundamentals</h1>
 
   <p>
-    <a href="#"><img src="https://img.shields.io/badge/License-MIT-0b7a5e.svg?style=flat-square" alt="MIT Licensed" /></a>
-    <a href="#"><img src="https://img.shields.io/badge/Modules-20-0b7a5e.svg?style=flat-square" alt="20 modules" /></a>
-    <a href="#"><img src="https://img.shields.io/badge/Diagrams-24_interactive-0b7a5e.svg?style=flat-square" alt="24 interactive diagrams" /></a>
-    <a href="#"><img src="https://img.shields.io/badge/Build-none_required-0b7a5e.svg?style=flat-square" alt="No build step" /></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-1d4ed8?style=flat-square" alt="MIT Licensed" /></a>
+    <a href="#-course-structure"><img src="https://img.shields.io/badge/Modules-20-7c3aed?style=flat-square" alt="20 modules" /></a>
+    <a href="#-interactive-features"><img src="https://img.shields.io/badge/Diagrams-24%20interactive-0b7a5e?style=flat-square" alt="24 interactive diagrams" /></a>
+    <a href="#-exercises-and-mock-exam"><img src="https://img.shields.io/badge/Practice-372%20items-ea580c?style=flat-square" alt="372 practice items" /></a>
+    <a href="#-quick-start"><img src="https://img.shields.io/badge/Build-none%20required-0891b2?style=flat-square" alt="No build step" /></a>
   </p>
 
   <p><b>A free, browser-based cybersecurity course in one HTML file.</b><br>
   Twenty modules from cryptography to governance, every complex mechanism drawn as an
   interactive diagram, plus checked exercises and a scored mock exam.</p>
 
-  <h3>&nbsp;</h3>
+<table align="center">
+<tr><td align="center" width="660">
 
-  <a href="https://stvsever.github.io/Cybersecurity_Fundamentals/src/index.html">
-    <img src="src/assets/open-course.gif" alt="Open the interactive course" width="380" />
-  </a>
+### 🎓&nbsp; Start the course
 
-  <p><sub>
-    Runs in the browser, no install, no account.<br>
-    Direct link: <a href="https://stvsever.github.io/Cybersecurity_Fundamentals/src/index.html"><b>stvsever.github.io/Cybersecurity_Fundamentals</b></a>
-  </sub></p>
+<a href="https://stvsever.github.io/Cybersecurity_Fundamentals/src/index.html"><img src="src/assets/open-course.gif" alt="Open the interactive course" width="430" /></a>
 
-  <h3>&nbsp;</h3>
+**🔗&nbsp; [stvsever.github.io/Cybersecurity_Fundamentals](https://stvsever.github.io/Cybersecurity_Fundamentals/src/index.html)**
+
+Opens straight in your browser. &nbsp;✓&nbsp; No install &nbsp;✓&nbsp; No account &nbsp;✓&nbsp; Nothing to configure
+
+</td></tr>
+</table>
+
+  <br>
 
   <a href="https://stvsever.github.io/Cybersecurity_Fundamentals/src/index.html">
     <img src="src/assets/overview.png" alt="The course, reading one module at a time" width="900" />
@@ -33,20 +37,20 @@
 
 </div>
 
-## Contents
+## 📚 Contents
 
-- [Quick Start](#quick-start)
-- [What Is Included](#what-is-included)
-- [Course Structure](#course-structure)
-- [Interactive Features](#interactive-features)
-- [Exercises And Mock Exam](#exercises-and-mock-exam)
-- [Settings And Local Data](#settings-and-local-data)
-- [Keyboard Shortcuts](#keyboard-shortcuts)
-- [Project Structure](#project-structure)
-- [Responsible Use](#responsible-use)
-- [License](#license)
+- 🚀 [Quick Start](#-quick-start)
+- 📦 [What Is Included](#-what-is-included)
+- 🗺️ [Course Structure](#-course-structure)
+- 📈 [Interactive Features](#-interactive-features)
+- 🧪 [Exercises And Mock Exam](#-exercises-and-mock-exam)
+- ⚙️ [Settings And Local Data](#-settings-and-local-data)
+- ⌨️ [Keyboard Shortcuts](#-keyboard-shortcuts)
+- 📁 [Project Structure](#-project-structure)
+- ⚖️ [Responsible Use](#-responsible-use)
+- 📜 [License](#-license)
 
-## Quick Start
+## 🚀 Quick Start
 
 ### 1. Read the course
 
@@ -81,7 +85,7 @@ python3 docker/runner.py
 
 Leave that terminal open. The Exercises pane shows the exact command, a copy button, and a live status indicator, and every other exercise type works without the runner. If you moved the runner to another port or host, change the endpoint in Settings under Assessments.
 
-## What Is Included
+## 📦 What Is Included
 
 - 20 curriculum modules with worked code examples and real-world cases in the lessons.
 - Module-by-module reading by default, with previous and next navigation above and below each module, plus a full-course mode for reference reading.
@@ -98,7 +102,7 @@ Leave that terminal open. The Exercises pane shows the exact command, a copy but
 - Threat intelligence interoperability: STIX 2.1, TAXII 2.1, MISP, OpenCTI, markings, confidence, expiry, and dissemination controls.
 - DISARM Red and Blue influence-operation analysis for FIMI, hack-and-leak operations, Doppelganger-style media cloning, amplification, response, and evidence handling.
 
-## Course Structure
+## 🗺️ Course Structure
 
 | Part | Modules | Focus |
 |---|---:|---|
@@ -109,7 +113,7 @@ Leave that terminal open. The Exercises pane shows the exact command, a copy but
 | V. Governance and the Global Landscape | 14-15 | GRC, risk, controls, compliance, global cyber governance, regulation |
 | VI. Frontiers and Advanced Practice | 16-20 | AI and agentic runtime security, ATLAS, OT/ICS safety, post-quantum migration, frontier radar, hyper-sophisticated operations, advanced adversary modeling, practitioner tools, version control and secure software delivery, references |
 
-## Interactive Features
+## 📈 Interactive Features
 
 - Three top-level panes: Curriculum, Exercises, and Mock Exam.
 - A collapsible learning map on desktop and a dismissible navigation drawer on mobile.
@@ -121,7 +125,7 @@ Leave that terminal open. The Exercises pane shows the exact command, a copy but
 - Light theme by default, plus dark and system themes, four accent colours, three reading typefaces, and density, text size, content width, motion, and contrast controls.
 - Copyable code blocks and answer reveal controls.
 
-## Exercises And Mock Exam
+## 🧪 Exercises And Mock Exam
 
 The Exercises pane is for practice. It includes:
 
@@ -133,7 +137,7 @@ The Exercises pane is for practice. It includes:
 
 The Mock Exam pane is separate and samples from the question bank instead of serving one fixed test. It includes quick and standard attempt lengths, domain and format selection, practice or exam modes, a progress navigator, review flags, timer preferences, resume support, per-domain results, and a compact local history.
 
-## Settings And Local Data
+## ⚙️ Settings And Local Data
 
 Open Settings from the top bar to control appearance, learning behavior, accessibility, assessment behavior, and local data. Relevant options include:
 
@@ -145,7 +149,7 @@ Open Settings from the top bar to control appearance, learning behavior, accessi
 
 The course has no account, analytics service, or remote progress store. Browser state stays on the current device. The optional Python checker listens on `127.0.0.1` and evaluates deterministic tests locally.
 
-## Keyboard Shortcuts
+## ⌨️ Keyboard Shortcuts
 
 | Key | Action |
 |---|---|
@@ -159,7 +163,7 @@ The course has no account, analytics service, or remote progress store. Browser 
 | `k` | Previous section or previous module |
 | `Esc` | Close a dialog or unfocus an input |
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 Cybersecurity_Fundamentals/
@@ -177,10 +181,10 @@ Cybersecurity_Fundamentals/
         +-- social-preview.png
 ```
 
-## Responsible Use
+## ⚖️ Responsible Use
 
 This course is intended for education, defensive learning, authorized security testing, and responsible research only. Offensive concepts are included so defenders can understand, detect, and counter real adversary behavior. Practice only in environments you own, operate, or have explicit written permission to assess.
 
-## License
+## 📜 License
 
 Released under the MIT License. You may use, modify, teach from, and redistribute this course, including commercially, as long as the copyright and license notice are preserved.
