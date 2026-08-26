@@ -9,10 +9,11 @@
   </p>
 
   <p>
-    A free, browser-based cybersecurity fundamentals course that covers cryptography,
-    networks, cloud, identity, ATT&amp;CK (ENTERPRISE, MOBILE and ATLAS), NIST2.0 CSF,
-    incident response, threat intelligence, and governance; including guided exercises
-    with runnable Python checks and a self-configurable mock exam.
+    A free, browser-based cybersecurity fundamentals course covering cryptography, networks,
+    identity, cloud, web and application security, secure software delivery, ATT&amp;CK
+    (Enterprise, Mobile, and ATLAS), NIST CSF 2.0, incident response, threat intelligence,
+    and governance. Every complex mechanism ships with an interactive SVG diagram, and the
+    course includes guided exercises with runnable Python checks and a configurable mock exam.
   </p>
 
   <hr>
@@ -68,25 +69,29 @@ docker build -t cyber-course-runner docker
 docker run --rm -p 8787:8787 cyber-course-runner
 ```
 
-Then open the course, go to `02 Exercises`, click `Check runtime`, and run the coding checks. The browser sends code only to `http://127.0.0.1:8787/run` on your machine. No LLM grading is used.
+Then open the course, go to `02 Exercises`, choose `Check runtime`, and run the coding checks. The browser sends code only to `http://127.0.0.1:8787/run` on your machine. No LLM grading is used.
 
-For local development without Docker, you can run the same runner directly:
+Without Docker, run the same checker directly from the repository root. This is the simplest option:
 
 ```bash
 python3 docker/runner.py
 ```
 
+Leave that terminal open. The Exercises pane shows the exact command, a copy button, and a live status indicator, and every other exercise type works without the runner. If you moved the runner to another port or host, change the endpoint in Settings under Assessments.
+
 ## What Is Included
 
-- 19 curriculum modules with worked code examples and updated real-world cases in the lessons.
-- A true module-by-module reading mode that isolates one module at a time.
-- Thirteen optional interactive concept models for risk, TLS, Zero Trust, network layers, web attack paths, cloud responsibility, ATT&CK, detection, incident response, CTI, NIST CSF, agent security, and post-quantum migration.
-- A first-visit guided walkthrough with a focused spotlight and a replay option in Settings.
+- 20 curriculum modules with worked code examples and real-world cases in the lessons.
+- Module-by-module reading by default, with previous and next navigation above and below each module, plus a full-course mode for reference reading.
+- 24 interactive, individually collapsible SVG diagrams built from measured text so labels never collide: UML sequence diagrams for the TLS 1.3 handshake, Kerberos, OpenID Connect with PKCE, DNS resolution, the TCP handshake and port scanning, Tor circuit construction, C2 beaconing, and the CSRF/SSRF/BOLA comparison; architecture diagrams for zero trust, AES-GCM, the Kubernetes control plane, ATT&CK attack paths, agentic AI, and the source-control platform; sequential-parallel pipelines for detection engineering, the software supply chain, and post-quantum migration; plus cycle, swimlane, layer, and encapsulation models.
+- Each diagram can be stepped through or played, with a per-step explanation panel.
+- A first-visit guided walkthrough that defocuses everything except the highlighted element, with a replay option in Settings.
 - Search with all-match highlighting and previous/next navigation.
-- A dedicated `02 Exercises` pane with section, format, status, and topic filters across 362 practice items, plus saved review flags and mastery state.
+- A dedicated `02 Exercises` pane with section, format, status, and topic filters across 372 practice items, plus saved review flags and mastery state.
+- A dedicated module on version control and secure software delivery: Git integrity and provenance, source-platform threat modelling, protected branches, signed commits, secrets handling, OIDC federation for pipelines, SBOM, VEX, Sigstore, in-toto, and SLSA.
 - A separate `03 Mock Exam` pane with sampled attempts, review flags, a question navigator, local attempt history, and 1000-point scoring.
 - MITRE ATT&CK Enterprise, Mobile ATT&CK, and ATLAS teaching matrices.
-- Refreshed 2026 coverage for ATT&CK v19.2, the OWASP Top 10 for LLM Applications 2026, the OWASP Top 10 for Agentic Applications 2026, NIST CSF 2.0, and the NIST Cyber AI Profile draft.
+- Refreshed 2026 coverage for ATT&CK v19.2, the OWASP Top 10 for LLM Applications 2026, the OWASP Top 10 for Agentic Applications 2026, NIST CSF 2.0, the NIST Cyber AI Profile draft, post-quantum standards including ML-KEM, ML-DSA, SLH-DSA, and HQC, and the EU Cyber Resilience Act.
 - D3FEND countermeasure knowledge-graph structure mapped to ATT&CK-style defensive design.
 - Threat intelligence interoperability: STIX 2.1, TAXII 2.1, MISP, OpenCTI, markings, confidence, expiry, and dissemination controls.
 - DISARM Red and Blue influence-operation analysis for FIMI, hack-and-leak operations, Doppelganger-style media cloning, amplification, response, and evidence handling.
@@ -100,18 +105,18 @@ python3 docker/runner.py
 | III. Offensive Operations | 08-09 | MITRE ATT&CK, Mobile ATT&CK, D3FEND, reconnaissance, exploitation, C2 |
 | IV. Defensive Operations and Intelligence | 10-13 | SOC, detection engineering, DFIR, malware, ransomware, botnets, CTI, OSINT, STIX/TAXII, DISARM |
 | V. Governance and the Global Landscape | 14-15 | GRC, risk, controls, compliance, global cyber governance, regulation |
-| VI. Frontiers and Advanced Practice | 16-19 | AI and agentic runtime security, ATLAS, OT/ICS safety, post-quantum migration, frontier radar, hyper-sophisticated operations, advanced adversary modeling, practitioner tools, references |
+| VI. Frontiers and Advanced Practice | 16-20 | AI and agentic runtime security, ATLAS, OT/ICS safety, post-quantum migration, frontier radar, hyper-sophisticated operations, advanced adversary modeling, practitioner tools, version control and secure software delivery, references |
 
 ## Interactive Features
 
 - Three top-level panes: Curriculum, Exercises, and Mock Exam.
 - A collapsible learning map on desktop and a dismissible navigation drawer on mobile.
-- All-modules mode or module-by-module mode with previous and next navigation.
+- A single compact module rail: reading mode, module jump list, position, and previous/next in one row.
 - Generated module tree and reading progress tracking.
-- Optional concept visualizations with interaction, motion-safe connection cues, compact explanations, and per-visual open state.
+- Interactive diagrams with step-through playback, motion-safe signal cues on edges, a per-step readout, and per-diagram open state. Diagram animation pauses automatically when a diagram scrolls out of view.
 - Embedded ATT&CK Enterprise, Mobile, and ATLAS matrices with technique detail panels.
 - Saved drafts, mastery indicators, and review lists for practice.
-- System, light, and dark themes, plus density, text size, content width, motion, and contrast controls.
+- Light theme by default, plus dark and system themes, four accent colours, three reading typefaces, and density, text size, content width, motion, and contrast controls.
 - Copyable code blocks and answer reveal controls.
 
 ## Exercises And Mock Exam
@@ -130,9 +135,9 @@ The Mock Exam pane is separate and samples from the question bank instead of ser
 
 Open Settings from the top bar to control appearance, learning behavior, accessibility, assessment behavior, and local data. Relevant options include:
 
-- Theme, information density, text size, content width, and the technical status strip.
-- Global visual visibility, default visual state, motion preference, and high contrast.
-- Last-pane memory, first-visit walkthrough replay, keyboard shortcuts, exam timer, question navigator, and abort confirmation.
+- Theme, accent colour, interface typeface, information density, text size, and content width.
+- Global diagram visibility, default diagram state, diagram animation, motion preference, and high contrast.
+- Last-pane memory, advance-on-completion, first-visit walkthrough replay, keyboard shortcuts, exam timer, question navigator, abort confirmation, and the Python runner endpoint.
 - A local data summary, JSON backup export, JSON restore, progress reset, and full local reset.
 
 The course has no account, analytics service, or remote progress store. Browser state stays on the current device. The optional Python checker listens on `127.0.0.1` and evaluates deterministic tests locally.

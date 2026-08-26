@@ -31,19 +31,25 @@ class RunnerHandler(BaseHTTPRequestHandler):
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Access-Control-Allow-Headers", "content-type")
-        self.send_header("Access-Control-Allow-Methods", "POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        # Chrome's Private Network Access check: a page served over https that calls a
+        # loopback address sends a preflight asking for these. Without them the browser
+        # blocks the request before the runner ever sees it.
+        self.send_header("Access-Control-Allow-Private-Network", "true")
+        self.send_header("Access-Control-Allow-Local-Network-Access", "true")
+        self.send_header("Access-Control-Max-Age", "86400")
         self.end_headers()
 
     def do_OPTIONS(self):
         self._headers(204)
 
     def do_GET(self):
-        if self.path != "/health":
+        if self.path.split("?")[0] not in ("/health", "/"):
             self._headers(404)
             self.wfile.write(json.dumps({"ok": False, "error": "not found"}).encode())
             return
         self._headers(200)
-        self.wfile.write(json.dumps({"ok": True}).encode())
+        self.wfile.write(json.dumps({"ok": True, "service": "cyber-course-runner", "version": 2}).encode())
 
     def do_POST(self):
         if self.path != "/run":
@@ -102,4 +108,11 @@ class RunnerHandler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    ThreadingHTTPServer((HOST, PORT), RunnerHandler).serve_forever()
+    server = ThreadingHTTPServer((HOST, PORT), RunnerHandler)
+    print("Cyber course runner listening on http://127.0.0.1:%d/run" % PORT)
+    print("Leave this window open, then choose 'Check runtime' in the course.")
+    print("Press Ctrl+C to stop.")
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        print("\nRunner stopped.")
