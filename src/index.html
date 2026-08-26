@@ -1398,7 +1398,6 @@
             <div class="setting-row"><div class="setting-copy"><strong>Visual card default</strong><span>Choose whether unseen diagrams start open or collapsed.</span></div><div class="setting-control"><select class="select-input" id="settingVisualDefault"><option value="open">Open</option><option value="closed">Collapsed</option></select></div></div>
             <div class="setting-row"><div class="setting-copy"><strong>Remember last pane</strong><span>Return to Curriculum, Exercises, or Mock Exam where you left it.</span></div><div class="setting-control"><label class="switch"><input id="settingRememberPane" type="checkbox"><span class="switch-track"></span><span>Remember</span></label></div></div>
             <div class="setting-row"><div class="setting-copy"><strong>Diagram animation</strong><span>Animate signal flow along diagram edges. Turn off for a completely static picture.</span></div><div class="setting-control"><label class="switch"><input id="settingDiagramMotion" type="checkbox"><span class="switch-track"></span><span>Animate</span></label></div></div>
-            <div class="setting-row"><div class="setting-copy"><strong>Jump ahead after marking studied</strong><span>Off by default. When on, marking a module studied moves you straight to the next one.</span></div><div class="setting-control"><label class="switch"><input id="settingAutoAdvance" type="checkbox"><span class="switch-track"></span><span>Jump</span></label></div></div>
             <div class="setting-row"><div class="setting-copy"><strong>Guided walkthrough</strong><span>Replay the sequential tour of navigation, visuals, practice, and settings.</span></div><div class="setting-control"><button class="sec-btn" id="replayTourBtn" type="button">Replay tour</button></div></div>
           </section>
 
@@ -4991,7 +4990,7 @@ git filter-repo --path config/secrets.yml --invert-paths
     themeMode: "light", density: "comfortable", textSize: "default", contentWidth: "standard",
     visuals: true, visualDefault: "open", rememberPane: true, diagramMotion: true,
     motion: "system", highContrast: false, examTimer: true, confirmAbort: true, examNavigator: true,
-    runnerUrl: "http://127.0.0.1:8787/run", autoAdvance: false
+    runnerUrl: "http://127.0.0.1:8787/run"
   };
   var state = loadState();
   hydrateState();
@@ -7502,7 +7501,6 @@ git filter-repo --path config/secrets.yml --invert-paths
 
     var labs = article.querySelectorAll(".lesson-example").length;
     var cases = article.querySelectorAll(".case").length;
-    setText("labCount", labs); setText("caseCount", cases);
   }
 
   /* ====================================================================
@@ -9177,7 +9175,7 @@ git filter-repo --path config/secrets.yml --invert-paths
     var s = state.settings;
     var values = { settingTheme: s.themeMode, settingDensity: s.density, settingTextSize: s.textSize, settingContentWidth: s.contentWidth, settingVisualDefault: s.visualDefault, settingMotion: s.motion, settingAccent: s.accent || "jade", settingFont: s.font || "sans" };
     Object.keys(values).forEach(function (id) { var el = document.getElementById(id); if (el) el.value = values[id]; });
-    var checks = { settingVisuals: s.visuals, settingDiagramMotion: s.diagramMotion !== false, settingRememberPane: s.rememberPane, settingHighContrast: s.highContrast, settingExamTimer: s.examTimer, settingConfirmAbort: s.confirmAbort, settingExamNavigator: s.examNavigator, settingAutoAdvance: s.autoAdvance === true };
+    var checks = { settingVisuals: s.visuals, settingDiagramMotion: s.diagramMotion !== false, settingRememberPane: s.rememberPane, settingHighContrast: s.highContrast, settingExamTimer: s.examTimer, settingConfirmAbort: s.confirmAbort, settingExamNavigator: s.examNavigator };
     Object.keys(checks).forEach(function (id) { var el = document.getElementById(id); if (el) el.checked = !!checks[id]; });
     var runnerField = document.getElementById("settingRunnerUrl");
     if (runnerField && document.activeElement !== runnerField) runnerField.value = s.runnerUrl || DEFAULT_SETTINGS.runnerUrl;
@@ -9217,7 +9215,7 @@ git filter-repo --path config/secrets.yml --invert-paths
     var selectMap = { settingDensity: "density", settingTextSize: "textSize", settingContentWidth: "contentWidth", settingVisualDefault: "visualDefault", settingMotion: "motion", settingAccent: "accent", settingFont: "font" };
     Object.keys(selectMap).forEach(function (id) { var el = document.getElementById(id); if (el) el.addEventListener("change", function () { setSetting(selectMap[id], el.value); }); });
     var theme = document.getElementById("settingTheme"); if (theme) theme.addEventListener("change", function () { state.settings.themeMode = theme.value; applyTheme(theme.value); syncSettingsControls(); });
-    var checkMap = { settingVisuals: "visuals", settingDiagramMotion: "diagramMotion", settingRememberPane: "rememberPane", settingHighContrast: "highContrast", settingExamTimer: "examTimer", settingConfirmAbort: "confirmAbort", settingExamNavigator: "examNavigator", settingAutoAdvance: "autoAdvance" };
+    var checkMap = { settingVisuals: "visuals", settingDiagramMotion: "diagramMotion", settingRememberPane: "rememberPane", settingHighContrast: "highContrast", settingExamTimer: "examTimer", settingConfirmAbort: "confirmAbort", settingExamNavigator: "examNavigator" };
     Object.keys(checkMap).forEach(function (id) { var el = document.getElementById(id); if (el) el.addEventListener("change", function () { setSetting(checkMap[id], el.checked); }); });
     var runnerUrlField = document.getElementById("settingRunnerUrl");
     if (runnerUrlField) runnerUrlField.addEventListener("change", function () {
