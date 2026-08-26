@@ -37,6 +37,7 @@
 - [Course Structure](#course-structure)
 - [Interactive Features](#interactive-features)
 - [Exercises And Mock Exam](#exercises-and-mock-exam)
+- [Settings And Local Data](#settings-and-local-data)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Project Structure](#project-structure)
 - [Responsible Use](#responsible-use)
@@ -56,7 +57,7 @@ start src/index.html         # Windows
 
 You can also open the root `index.html`, which redirects to the course in `src/`.
 
-Progress, exercise drafts, theme, and exam work are saved locally in your browser with `localStorage`.
+Progress, visual preferences, settings, exercise drafts, review flags, exam work, and attempt history are saved locally in your browser with `localStorage`.
 
 ### 2. Run the Python exercise checker
 
@@ -79,10 +80,13 @@ python3 docker/runner.py
 
 - 19 curriculum modules with worked code examples and updated real-world cases in the lessons.
 - A true module-by-module reading mode that isolates one module at a time.
+- Thirteen optional interactive concept models for risk, TLS, Zero Trust, network layers, web attack paths, cloud responsibility, ATT&CK, detection, incident response, CTI, NIST CSF, agent security, and post-quantum migration.
+- A first-visit guided walkthrough with a focused spotlight and a replay option in Settings.
 - Search with all-match highlighting and previous/next navigation.
-- A dedicated `02 Exercises` pane with section and format filters, 200+ practice items, multiple choice checks, open-response model answers, and runnable Python coding exercises.
-- A separate `03 Mock Exam` pane with sampled attempts and 1000-point scoring.
+- A dedicated `02 Exercises` pane with section, format, status, and topic filters across 362 practice items, plus saved review flags and mastery state.
+- A separate `03 Mock Exam` pane with sampled attempts, review flags, a question navigator, local attempt history, and 1000-point scoring.
 - MITRE ATT&CK Enterprise, Mobile ATT&CK, and ATLAS teaching matrices.
+- Refreshed 2026 coverage for ATT&CK v19.2, the OWASP Top 10 for LLM Applications 2026, the OWASP Top 10 for Agentic Applications 2026, NIST CSF 2.0, and the NIST Cyber AI Profile draft.
 - D3FEND countermeasure knowledge-graph structure mapped to ATT&CK-style defensive design.
 - Threat intelligence interoperability: STIX 2.1, TAXII 2.1, MISP, OpenCTI, markings, confidence, expiry, and dissemination controls.
 - DISARM Red and Blue influence-operation analysis for FIMI, hack-and-leak operations, Doppelganger-style media cloning, amplification, response, and evidence handling.
@@ -101,11 +105,13 @@ python3 docker/runner.py
 ## Interactive Features
 
 - Three top-level panes: Curriculum, Exercises, and Mock Exam.
+- A collapsible learning map on desktop and a dismissible navigation drawer on mobile.
 - All-modules mode or module-by-module mode with previous and next navigation.
 - Generated module tree and reading progress tracking.
+- Optional concept visualizations with interaction, motion-safe connection cues, compact explanations, and per-visual open state.
 - Embedded ATT&CK Enterprise, Mobile, and ATLAS matrices with technique detail panels.
-- Saved drafts for open response and coding exercises.
-- Light and dark themes.
+- Saved drafts, mastery indicators, and review lists for practice.
+- System, light, and dark themes, plus density, text size, content width, motion, and contrast controls.
 - Copyable code blocks and answer reveal controls.
 
 ## Exercises And Mock Exam
@@ -113,11 +119,23 @@ python3 docker/runner.py
 The Exercises pane is for practice. It includes:
 
 - Section and format filters so learners can drill all questions, one domain, or one format.
+- Topic search, mastery filters, saved-for-review flags, and paged rendering that keeps the large bank responsive.
 - Multiple choice questions with explanations.
 - Open questions with model answers.
 - Runnable Python exercises with function contracts, starter code, expected behavior, and automated tests.
 
-The Mock Exam pane is separate and samples from the question bank instead of serving one fixed test.
+The Mock Exam pane is separate and samples from the question bank instead of serving one fixed test. It includes quick and standard attempt lengths, domain and format selection, practice or exam modes, a progress navigator, review flags, timer preferences, resume support, per-domain results, and a compact local history.
+
+## Settings And Local Data
+
+Open Settings from the top bar to control appearance, learning behavior, accessibility, assessment behavior, and local data. Relevant options include:
+
+- Theme, information density, text size, content width, and the technical status strip.
+- Global visual visibility, default visual state, motion preference, and high contrast.
+- Last-pane memory, first-visit walkthrough replay, keyboard shortcuts, exam timer, question navigator, and abort confirmation.
+- A local data summary, JSON backup export, JSON restore, progress reset, and full local reset.
+
+The course has no account, analytics service, or remote progress store. Browser state stays on the current device. The optional Python checker listens on `127.0.0.1` and evaluates deterministic tests locally.
 
 ## Keyboard Shortcuts
 
@@ -147,6 +165,7 @@ Cybersecurity_Fundamentals/
     +-- index.html
     +-- assets/
         +-- overview.png
+        +-- social-preview.png
 ```
 
 ## Responsible Use
